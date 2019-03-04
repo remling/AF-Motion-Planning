@@ -15,13 +15,13 @@ Explain what’s going on in motion_planning.py and planning_utils.py
 - However, WebSocketConnection is no longer imported
 - In class States(Enum)
      - A new State: PLANNING
-     - Alsostatesnolongerareassociatedwithintegers(0,1,...)butnowallareauto()
-- classBackyardFlyer(Drone)isrenamedtoclassMotionPlanning(Drone)
+     - Also states no longer are associated with integers (0,1,...) but now all are auto()
+- classBackyardFlyer(Drone) is renamed to classMotionPlanning(Drone)
 - self.all_waypoints became self.waypoints
 - calculate_box() method was removed and is no longer called
 - transition methods now set new state first
-- state_callback(self)methodnowalso
-     - callsself.plan_path()oncearmed
+- state_callback(self) method now also
+     - callsself.plan_path() once armed
      - andtransitionstotakeoff,ifself.flight_state==States.Planning
 - Target Altitude is no longer hardwired, but a variable contained in self.target_position[2]
 - In method waypoint_transition(self) Heading is no longer set to 0, but expressed in avariable self.target_position[3]
@@ -114,3 +114,7 @@ lines 177-184 and planning_utils.py lines 108-134
 2. On Dec 29, I saw from the student hub discussions that the goal location should be passed as arguments. I found the approach to a solution on line and referenced the source in line 2 of motion_planning.py (as well as referenced to line 2 where-ever changes were required). The rest of the solution was either based on lecture material (referenced) or my own
 3. Pruning the path is functional, but the example commands provided still have sequences of small steps. This may be due to diagonal steps being included. This would clearly be very uncomfortable as a passenger. Also I reduced the maximum speed in the simulator to 5 and increased the SAFTETY_DISTANCE to 7 to avoid bouncing off a building.
 4. As mentioned before, this solution is only the best I can do with the current time restrictions (I work full time and have other obligations as well). Clearly the techniques introduced in Part 2 Lesson 5 would allow much better solutions, as would extracting some of the steps into separate methods. (I am looking forward to spending more time on this in future)
+
+
+**Further TODOs**
+reformat to show variables and methods differntly
