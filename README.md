@@ -3,7 +3,7 @@ Udacity Self-flying Car (Autonomous Flight) Project 2
 for project details please refer to https://github.com/udacity/FCND-Motion-Planning
 
 # Project 2, FCND Program
-## Roswitha Remling, 2018-12-29
+Roswitha Remling, 2018-12-29
 
 ### Step 6:
 Explain what’s going on in motion_planning.py and planning_utils.py
