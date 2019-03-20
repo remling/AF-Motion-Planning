@@ -1,14 +1,13 @@
 # AF-Motion-Planning
+
 Udacity Self-Flying Car (Autonomous Flight) 
-
 Project 2
-
 For project details please refer to https://github.com/udacity/FCND-Motion-Planning
 
 
 # Project 2, Udacity FCND Course
-Roswitha Remling, 2018-12-29
 
+Roswitha Remling, 2018-12-29
 (last edited 2019-03-20)
 
 
