@@ -31,8 +31,8 @@ Explain what’s going on in motion_planning.py and planning_utils.py
      - callsself.plan_path() once armed
      - andtransitionstotakeoff,ifself.flight_state==States.Planning
 - Target Altitude is no longer hardwired, but a variable contained in self.target_position[2]
-- In method waypoint_transition(self) Heading is no longer set to 0, but expressed in avariable self.target_position[3]
-- Send_waypoints(self)andplan_path(self)aretwonewmethods,latterwithseveral
+- In method waypoint_transition(self) - Heading is no longer set to 0, but expressed in the variable self.target_position[3]
+- Send_waypoints(self) and plan_path(self) are two new methods,latter with several
 
 #### TODOs (see Step 8 write up for details)
 - In start(self) , super().start() was replaced with self().connection.start()
