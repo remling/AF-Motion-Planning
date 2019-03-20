@@ -2,7 +2,7 @@
 ## Project 2, Udacity FCND Course 
 Udacity Self-Flying Car (Autonomous Flight) Nano Degree  
 
-For project details please [Project Description](https://github.com/udacity/FCND-Motion-Planning). Steps 1 - 5 are setup and orientation.
+For project details please [Project Description](https://github.com/udacity/FCND-Motion-Planning). Steps 1 through 5 are setup and orientation.
 
 Originally submitted, 2018-12-29, README updated 2019-03-20 (to make more readable)
 ____
@@ -128,18 +128,18 @@ lines 177-184 and `planning_utils.py` lines 108-134
 
 1. Provided the time I had available, I decided to submit the minimum required, since I want to stay on schedule with this course. I admit that this solution is not elegant, and plan to spend more time on it after the course ends and post that on github as a project (the only silver lining I see is that repetition will solidify learning)
 
-2. On Dec 29, I saw from the student hub discussions that the goal location should be passed as arguments. I found the approach to a solution online and referenced the source in line 2 of motion_planning.py (as well as referenced to line 2 win any place where changes were necessary). The rest of the solution was either based on lecture material (referenced) or my own
+2. On Dec 29, I saw from the student hub discussions that the goal location should be passed as arguments. I found the approach to a solution online and referenced the source in line 2 of motion_planning.py (as well as referenced to line 2 in any place where changes were necessary). The rest of the solution was either based on lecture material (referenced) or my own
 
-3. Pruning the path is functional, but the example commands provided still have sequences of small steps. This may be due to diagonal steps being included. This would clearly be very uncomfortable as a passenger. Also I reduced the maximum speed in the simulator to 5 and increased the SAFTETY_DISTANCE to 7 to avoid bouncing off buildings
+3. Pruning the path is functional, but the example commands provided still have sequences of small steps. This may be due to diagonal steps being included. This would clearly be very uncomfortable as a passenger. Also I reduced the maximum speed in the simulator to 5 and increased the `SAFTETY_DISTANCE` to 7 to avoid bouncing off buildings
 
 4. As mentioned before, this solution is only the best I can do with the current time restrictions (I work full time and have other obligations as well). Clearly the techniques introduced in Part 2 Lesson 5 would allow much better solutions, as would extracting some of the steps into separate methods. (I am looking forward to spending more time on this in future)
 
 
 ### Further TODOs:
 
-- [x] Reformat to show variables and methods differently
+- [x] Reformat to show `variables` and `methods` differently 
 - [x] Ensure initial paragraphs and continuity 
 - [ ] Upload movie for Step 7
-- [ ] Improve pruning
+- [ ] Improvements mentioned in **Additional Comments**
 - [ ] (Optional) How to get new line without blank line
 - [ ] \(Optional) Other?
