@@ -104,7 +104,7 @@ line 2 in motion_planning.py)
      - Line 216 setsgoal_global_position for arguments parsed
      - Line 217 updated calling MotionPlanning with passed in goal positions
 
-**TODO: add diagonal motions with a cost of sqrt(2) to your A* implementation**
+**TODO: add diagonal motions with a cost of sqrt(2) to your A/* implementation**
 planning_utils.py lines 61-65 and 96-104
 - Added 4 actions to class Action (NW, NE, SW, SE)
 - Added 4 additional conditions to eliminate actions if infeasible to method valid_actions
