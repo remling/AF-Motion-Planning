@@ -13,7 +13,7 @@ Roswitha Remling, 2018-12-29
 
 
 ### Step 6:
-Explain what’s going on in motion_planning.py and planning_utils.py
+### Explain what’s going on in motion_planning.py and planning_utils.py
 
 #### Task 1a:
 
