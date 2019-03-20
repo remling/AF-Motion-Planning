@@ -125,3 +125,4 @@ lines 177-184 and planning_utils.py lines 108-134
 **Further TODOs**
 
 - [ ] reformat to show variables and methods differently
+- [ ] ensure initial paragraphs and continuity 
