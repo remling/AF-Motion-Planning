@@ -2,7 +2,7 @@
 ## Project 2, Udacity FCND Course 
 Udacity Self-Flying Car (Autonomous Flight) Nano Degree  
 
-For project details please [Project Description](https://github.com/udacity/FCND-Motion-Planning). Steps 1-5 are setup and orientation.
+For project details please [Project Description](https://github.com/udacity/FCND-Motion-Planning). Steps 1 - 5 are setup and orientation.
 
 Originally submitted, 2018-12-29
 ____
@@ -29,18 +29,23 @@ ____
 - In `start(self)` , `super().start()` was replaced with `self().connection.start()`
 - The `__main__` program now includes several lines using `argparse` methods
 
-#### Task 1b: How do functions provided in planning_utils.py work?
+**Task 1b: How do functions provided in `planning_utils.py` work?**
 
-**create_grid**
+`create_grid`:
 - Returns
      - an array of feasible and infeasible cells for the drone’s altitude and safety distance based on provided data on obstacles
      - as well as the north (x) and east (y) offset of the array 0,0 point from the center of the grid
-- if the obstacle is lower than the drone altitude + safety distance it is considered feasible class Action: provides possible moves as well as their costs (x and y only, not diagonal)
-valid_actions: eliminates actions (moves) if they are no longer on the grid or encounter an obstacle at the provided drone altitude (= removes infeasible actions)
-a_star
+- if the obstacle is lower than the drone altitude + safety distance it is considered feasible 
+
+`class Action`: provides possible moves as well as their costs (x and y only, not diagonal)
+
+`valid_actions`: eliminates actions (moves) if they are no longer on the grid or encounter an obstacle at the provided drone altitude (= removes infeasible actions)
+
+`a_star`:
 - returns the lowest cost path and the cost of that path, based on start, goal and heuristic
 - or prints “Failed to find a path!” and returns and empty path array
-heuristic
+
+`heuristic`:
 - returns the cost (absolute distance) from a given position to goal
 - is consistent and admissible
 
