@@ -1,5 +1,6 @@
-# **AF-Motion-Planning** - - - Project 2, Udacity FCND Course 
-## Udacity Self-Flying Car (Autonomous Flight) Nano Degree  
+# AF-Motion-Planning 
+## Project 2, Udacity FCND Course 
+Udacity Self-Flying Car (Autonomous Flight) Nano Degree  
 
 For project details please refer to https://github.com/udacity/FCND-Motion-Planning
 
