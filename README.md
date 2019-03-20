@@ -81,9 +81,7 @@ line 136
 
 **TODO: retrieve current global position**
 
-lines 139-141
-
-    set `global_position` from methods provided for latitude, longitude and altitude
+lines 139-141 - set `global_position` from methods provided for latitude, longitude and altitude
 
 **TODO: convert to current local position using global_to_local()**
 
