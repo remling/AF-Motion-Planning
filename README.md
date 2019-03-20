@@ -52,16 +52,16 @@ ____
 ### Step 7: Write Your Planner
 
 Updated `motion_planning.py` and `planning_utils.py`. These two commands worked for me (though solution was not elegant)
-```python
+```
 python motion_planning.py --goal_lon -122.398450 --goal_lat 37.793680 --goal_alt -0.147 python motion_planning.py --goal_lon -122.397450 --goal_lat 37.792680 --goal_alt -0.147
 ```
-See also QuickTime Screen Recording run04many.mov
+QuickTime Screen Recording `run04many.mov` was unfortunately too large to upload
 
 ### Step 8: Write it up
 
-Please note, all line numbers refer to motion_planning.py unless specifically stated otherwise
+Please note, all line numbers refer to `motion_planning.py` unless specifically stated otherwise
 
-#### TODO: read lat0, lon0 from colliders into floating point values
+**TODO: read lat0, lon0 from colliders into floating point values**
 lines 128-133
 - read only the first line of colliders.csv
 - strip new line
@@ -71,7 +71,7 @@ lines 128-133
 - this only will work if the format of the first line is consistent, if the order of lat and lon are changed
 it will fail
 
-#### TODO: set home position to (lon0, lat0, 0)
+**TODO: set home position to (lon0, lat0, 0)**
 line 136
 - the method to use was provided
 - key point to pay attention to was the order of longitude and latitude # TODO: retrieve current global position
@@ -79,18 +79,18 @@ line 136
 lines 139-141
 set global_position from methods provided for latitude, longitude and altitude
 
-#### TODO: convert to current local position using global_to_local()
+**TODO: convert to current local position using global_to_local()**
 lines 144-147
 - determine local position using global_to_local providing global_position and
 global_home
 - I also set NEDs
 
-#### TODO: convert start position to current position rather than map center
+**TODO: convert start position to current position rather than map center**
 lines 160-162
 - Calculate grid x and y by adding self._north and self._east to the grid offsets
 - assign grid_start variable
 
-#### TODO: adapt to set goal as latitude / longitude position and convert
+**TODO: adapt to set goal as latitude / longitude position and convert**
 lines 168+169
 - Calculate local NED from passed in global goal position using global_to__local and global home
 - Assign grid_goal variable from Goal NEDs (including north and east offset)
@@ -104,12 +104,12 @@ line 2 in motion_planning.py)
      - Line 216 setsgoal_global_position for arguments parsed
      - Line 217 updated calling MotionPlanning with passed in goal positions
 
-#### TODO: add diagonal motions with a cost of sqrt(2) to your A* implementation – done
+**TODO: add diagonal motions with a cost of sqrt(2) to your A* implementation**
 planning_utils.py lines 61-65 and 96-104
 - Added 4 actions to class Action (NW, NE, SW, SE)
 - Added 4 additional conditions to eliminate actions if infeasible to method valid_actions
 
-#### TODO: prune path to minimize number of waypoints
+**TODO: prune path to minimize number of waypoints**
 lines 177-184 and planning_utils.py lines 108-134
 - Renamed original path
 - Called prune_path on the original path to create pruned_path
@@ -124,7 +124,8 @@ lines 177-184 and planning_utils.py lines 108-134
 
 ### Further TODOs:
 
-- [ ] reformat to show variables and methods differently
-- [ ] ensure initial paragraphs and continuity 
+- [ ] Reformat to show variables and methods differently
+- [ ] Rnsure initial paragraphs and continuity 
+- [ ] Upload movie for Step 7
 - [ ] (Optional) How to get new line without blank line
 - [ ] \(Optional) Other?
