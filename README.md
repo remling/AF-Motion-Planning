@@ -2,7 +2,7 @@
 ## Project 2, Udacity FCND Course 
 Udacity Self-Flying Car (Autonomous Flight) Nano Degree  
 
-For project details please refer to https://github.com/udacity/FCND-Motion-Planning
+For project details please [Project Description](https://github.com/udacity/FCND-Motion-Planning). Steps 1-5 are setup and orientation.
 
 Originally submitted, 2018-12-29
 ____
