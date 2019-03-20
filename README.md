@@ -1,6 +1,6 @@
 # **AF-Motion-Planning**
 
-Udacity Self-Flying Car (Autonomous Flight)   - - -  **Project 2, Udacity FCND Course**
+**Project 2, Udacity FCND Course** - - - Udacity Self-Flying Car (Autonomous Flight) NanoDegree  
 
 For project details please refer to https://github.com/udacity/FCND-Motion-Planning
 
@@ -120,3 +120,4 @@ lines 177-184 and planning_utils.py lines 108-134
 - [ ] reformat to show variables and methods differently
 - [ ] ensure initial paragraphs and continuity 
 - [ ] \(Optional) Other?
+- [ ] (Optional) How to get new line without blank line
