@@ -2,12 +2,12 @@
 ## Project 2, Udacity FCND Course 
 Udacity Self-Flying Car (Autonomous Flight) Nano Degree  
 
-For project details please [Project Description](https://github.com/udacity/FCND-Motion-Planning). Steps 1 - 5 are setup and orientation.</br>
+For project details please [Project Description](https://github.com/udacity/FCND-Motion-Planning). Steps 1 - 5 are setup and orientation.
+
 Originally submitted, 2018-12-29
 ____
-<p></p>
-### Step 6: Explain what’s going on in `motion_planning.py` and `planning_utils.py`
 
+### Step 6: Explain what’s going on in `motion_planning.py` and `planning_utils.py`
 
 **Task 1a: What is different about `motion_planning.py` from `backyard_flyer_solution.py`**
 - Several new imports, such as (from) `argparse`, `msgpack`, `planning_utils`, `udacidrone.frame_utils`
@@ -30,22 +30,22 @@ ____
 
 **Task 1b: How do functions provided in `planning_utils.py` work?**
 
-`create_grid`:
+`create_grid` :
 - Returns
      - an array of feasible and infeasible cells for the drone’s altitude and safety distance based on provided data on obstacles
      - as well as the north (x) and east (y) offset of the array 0,0 point from the center of the grid
 - if the obstacle is lower than the drone altitude + safety distance it is considered feasible 
 
-`class Action`: provides possible moves as well as their costs (x and y only, not diagonal)
+`class Action` : provides possible moves as well as their costs (x and y only, not diagonal)
 
-`valid_actions`: eliminates actions (moves) if they are no longer on the grid or encounter an obstacle at the provided drone altitude (= removes infeasible actions)
+`valid_actions` : eliminates actions (moves) if they are no longer on the grid or encounter an obstacle at the provided drone altitude (= removes infeasible actions)
 
-`a_star`:
+`a_star` :
 - returns the lowest cost path and the cost of that path, based on start, goal and heuristic
-- or prints “Failed to find a path!” and returns and empty path array
+- or prints **“Failed to find a path!”** and returns and empty path array
 
-`heuristic`:
-- returns the cost (absolute distance) from a given position to goal
+`heuristic` :
+- returns the cost (absolute distance) from a provided position to goal
 - is consistent and admissible
 
 
