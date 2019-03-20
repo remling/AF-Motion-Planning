@@ -1,6 +1,6 @@
 # **AF-Motion-Planning**
 
-**Project 2, Udacity FCND Course** - - - Udacity Self-Flying Car (Autonomous Flight) NanoDegree  
+**Project 2, Udacity FCND Course** - - - Udacity Self-Flying Car (Autonomous Flight) Nano Degree  
 
 For project details please refer to https://github.com/udacity/FCND-Motion-Planning
 
@@ -10,25 +10,23 @@ Originally submitted, 2018-12-29
 ### Step 6: Explain what’s going on in `motion_planning.py` and `planning_utils.py`
 
 **Task 1a: What is different about `motion_planning.py` from `backyard_flyer_solution.py`**
-- Several new imports, such as (from) argparse, msgpack, planning_utils, udacidrone.frame_utils
-- However, WebSocketConnection is no longer imported
-- In class States(Enum)
-     - A new State: PLANNING
-     - Also states no longer are associated with integers (0,1,...) but now all are auto()
-- classBackyardFlyer(Drone) is renamed to classMotionPlanning(Drone)
-- self.all_waypoints became self.waypoints
-- calculate_box() method was removed and is no longer called
+- Several new imports, such as (from) `argparse`, `msgpack`, `planning_utils`, `udacidrone.frame_utils`
+- However, `WebSocketConnection` is no longer imported
+- In `class States(Enum)`
+     - A new State: `PLANNING`
+     - Also states no longer are associated with integers (0,1,...) but now all are `auto()`
+- `class BackyardFlyer(Drone)` is renamed to `class MotionPlanning(Drone)`
+- `self.all_waypoints` became `self.waypoints`
+- `calculate_box()` method was removed and is no longer called
 - transition methods now set new state first
-- state_callback(self) method now also
-     - callsself.plan_path() once armed
-     - andtransitionstotakeoff,ifself.flight_state==States.Planning
-- Target Altitude is no longer hardwired, but a variable contained in self.target_position[2]
-- In method waypoint_transition(self) - Heading is no longer set to 0, but expressed in the variable self.target_position[3]
-- Send_waypoints(self) and plan_path(self) are two new methods,latter with several
-
-#### TODOs (see Step 8 write up for details)
-- In start(self) , super().start() was replaced with self().connection.start()
-- The __main__ program now includes several lines using argparse methods
+- `state_callback(self)` method now also
+     - calls `self.plan_path()`, after being armed
+     - andtransitionstotakeoff, if `self.flight_state==States.Planning`
+- Target Altitude is no longer hardwired, but a variable contained in `self.target_position[2]`
+- In method `waypoint_transition(self)` - Heading is no longer set to 0, but expressed in the variable `self.target_position[3]`
+- `Send_waypoints(self)` and `plan_path(self)` are two new methods,latter with several TODOs (see Step 8 write up for details)
+- In `start(self)` , `super().start()` was replaced with `self().connection.start()`
+- The `__main__` program now includes several lines using `argparse` methods
 
 #### Task 1b: How do functions provided in planning_utils.py work?
 
@@ -119,5 +117,5 @@ lines 177-184 and planning_utils.py lines 108-134
 
 - [ ] reformat to show variables and methods differently
 - [ ] ensure initial paragraphs and continuity 
-- [ ] \(Optional) Other?
 - [ ] (Optional) How to get new line without blank line
+- [ ] \(Optional) Other?
