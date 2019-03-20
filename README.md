@@ -138,7 +138,7 @@ lines 177-184 and `planning_utils.py` lines 108-134
 ### Further TODOs:
 
 - [x] Reformat to show variables and methods differently
-- [x] Rnsure initial paragraphs and continuity 
+- [x] Ensure initial paragraphs and continuity 
 - [ ] Upload movie for Step 7
 - [ ] Improve pruning
 - [ ] (Optional) How to get new line without blank line
