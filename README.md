@@ -14,12 +14,9 @@ Roswitha Remling, 2018-12-29
 (last edited 2019-03-20)
 
 
-### Step 6:
-### Explain what’s going on in `motion_planning.py` and `planning_utils.py`
+### Step 6: Explain what’s going on in `motion_planning.py` and `planning_utils.py`
 
-#### Task 1a:
-
-**What is different about motion_planning.py from backyard_flyer_solution.py**
+**Task 1a: What is different about `motion_planning.py` from `backyard_flyer_solution.py`**
 - Several new imports, such as (from) argparse, msgpack, planning_utils, udacidrone.frame_utils
 - However, WebSocketConnection is no longer imported
 - In class States(Enum)
