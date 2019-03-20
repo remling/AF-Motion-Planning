@@ -1,17 +1,10 @@
 # **AF-Motion-Planning**
 
-Udacity Self-Flying Car (Autonomous Flight) 
-
-Project 2
+Udacity Self-Flying Car (Autonomous Flight)   - - -  **Project 2, Udacity FCND Course**
 
 For project details please refer to https://github.com/udacity/FCND-Motion-Planning
 
-
-## Project 2, Udacity FCND Course
-
-Roswitha Remling, 2018-12-29
-
-(last edited 2019-03-20)
+Originally submitted, 2018-12-29
 
 
 ### Step 6: Explain what’s going on in `motion_planning.py` and `planning_utils.py`
@@ -126,3 +119,4 @@ lines 177-184 and planning_utils.py lines 108-134
 
 - [ ] reformat to show variables and methods differently
 - [ ] ensure initial paragraphs and continuity 
+- [ ] \(Optional) Other?
