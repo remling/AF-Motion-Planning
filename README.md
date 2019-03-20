@@ -82,7 +82,8 @@ line 136
 **TODO: retrieve current global position**
 
 lines 139-141
-set `global_position` from methods provided for latitude, longitude and altitude
+
+    set `global_position` from methods provided for latitude, longitude and altitude
 
 **TODO: convert to current local position using global_to_local()**
 
@@ -141,5 +142,6 @@ lines 177-184 and `planning_utils.py` lines 108-134
 - [ ] Reformat to show variables and methods differently
 - [ ] Rnsure initial paragraphs and continuity 
 - [ ] Upload movie for Step 7
+- [ ] Improve pruning
 - [ ] (Optional) How to get new line without blank line
 - [ ] \(Optional) Other?
